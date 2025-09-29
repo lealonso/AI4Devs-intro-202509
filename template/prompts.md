@@ -1,3 +1,6 @@
+
+USADO ChatGPT 5 en su web
+
 Versión con botón Reverse
 
 #Role
