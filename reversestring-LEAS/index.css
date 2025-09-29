@@ -1,0 +1,99 @@
+/* Minimal Bootstrap-like styles (no external libs) */
+
+:root {
+  --bs-primary: #0d6efd;
+  --bs-primary-hover: #0b5ed7;
+  --bs-light: #f8f9fa;
+  --bs-border: #dee2e6;
+  --bs-body: #212529;
+  --bs-muted: #6c757d;
+}
+
+/* Layout helpers */
+.vh-100 { min-height: 100vh; }
+.d-flex { display: flex; }
+.align-items-center { align-items: center; }
+.justify-content-center { justify-content: center; }
+.bg-light { background-color: var(--bs-light); }
+.container-sm { width: 100%; max-width: 520px; padding: 1rem; }
+
+/* Card */
+.card { background: #fff; border: 1px solid var(--bs-border); border-radius: .5rem; }
+.card-body { padding: 1.5rem; }
+.card-title { margin: 0 0 1rem; }
+
+/* Typography & utilities */
+.h3 { font-size: 1.5rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.my-4 { margin: 1.5rem 0; }
+.text-center { text-align: center; }
+.fw-semibold { font-weight: 600; }
+.ms-2 { margin-left: .5rem; }
+.g-3 { gap: 1rem; }
+.row { display: grid; }
+.col-12 { width: 100%; }
+
+/* Form */
+.form-label { display: inline-block; margin-bottom: .5rem; color: var(--bs-body); }
+.form-control {
+  width: 100%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--bs-body);
+  background-color: #fff;
+  border: 1px solid var(--bs-border);
+  border-radius: .375rem;
+  outline: none;
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+.form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 .2rem rgba(13,110,253,.25);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  padding: .5rem .75rem;
+  border: 1px solid transparent;
+  border-radius: .375rem;
+}
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+}
+.btn-primary:hover { background-color: var(--bs-primary-hover); border-color: var(--bs-primary-hover); }
+.w-100 { width: 100%; }
+
+/* Alerts */
+.alert {
+  position: relative;
+  padding: .75rem 1rem;
+  border: 1px solid var(--bs-border);
+  border-radius: .375rem;
+  color: var(--bs-body);
+  background-color: #f1f3f5;
+}
+.alert-secondary {
+  background-color: #f8f9fa;
+  border-color: var(--bs-border);
+  color: var(--bs-body);
+}
+
+/* HR */
+hr {
+  border: 0;
+  border-top: 1px solid var(--bs-border);
+}
+
+/* Helpers */
+.d-none { display: none !important; }
+.shadow-sm { box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); }
